@@ -4,6 +4,7 @@ import { ThemeProvider } from './contexts/ThemeContext'
 import { NotificationProvider } from './contexts/NotificationContext'
 import Header from './components/Header'
 import Home from './components/Home'
+import Login from './components/Login'
 import ResumeDashboard from './components/ResumeDashboard'
 import PersonalInfoForm from './components/PersonalInfoForm'
 import EducationForm from './components/EducationForm'
@@ -86,6 +87,7 @@ function App() {
             <main className="flex-1 w-full">
               <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/login" element={<Login />} />
                 <Route
                   path="/dashboard"
                   element={<ResumeDashboard resumeData={resumeData} setResumeData={setResumeData} />}

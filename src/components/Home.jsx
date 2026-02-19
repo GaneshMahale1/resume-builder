@@ -63,10 +63,10 @@ function Home() {
         </div>
 
         <Link
-          to="/dashboard"
+          to="/login"
           className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 sm:py-3 lg:py-4 px-6 sm:px-8 lg:px-12 rounded-lg transition duration-200 text-base sm:text-lg lg:text-xl"
         >
-          Open Resume Dashboard
+          Get Started - Sign In
         </Link>
 
         <div className="mt-6 sm:mt-8 lg:mt-12 text-gray-500">
