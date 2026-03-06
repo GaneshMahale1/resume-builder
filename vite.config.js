@@ -9,4 +9,8 @@ export default defineConfig(({ mode }) => ({
     outDir: 'dist',
     assetsDir: 'assets',
   },
+  server: {
+    port: 5174,
+    host: true
+  }
 }))

@@ -2,11 +2,9 @@ import { useState } from 'react'
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import { ThemeProvider } from './contexts/ThemeContext'
 import { NotificationProvider } from './contexts/NotificationContext'
-import ErrorBoundary from './components/ErrorBoundary'
 import Header from './components/Header'
 import Home from './components/Home'
 import Login from './components/Login'
-import Register from './components/Register'
 import ResumeDashboard from './components/ResumeDashboard'
 import PersonalInfoForm from './components/PersonalInfoForm'
 import EducationForm from './components/EducationForm'
@@ -144,7 +142,6 @@ function App() {
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/login" element={<Login />} />
-                <Route path="/register" element={<Register />} />
                 
                 {/* Protected Routes */}
                 <Route path="/dashboard" element={
